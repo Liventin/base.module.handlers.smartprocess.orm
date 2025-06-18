@@ -12,14 +12,8 @@ install | update
 
 ```
 "require": {
-    "liventin/base.module.handlers.smartprocess.orm": "dev-main"
+    "liventin/base.module.handlers.smartprocess.orm": "^1.0.0"
 }
-"repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:liventin/base.module.handlers.smartprocess.orm"
-    }
-]
 ```
 redirect (optional)
 ```
