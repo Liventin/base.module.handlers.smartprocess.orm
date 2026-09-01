@@ -6,21 +6,15 @@ use Base\Module\Install\Interface\Install;
 use Base\Module\Install\Interface\UnInstall;
 use Base\Module\Install\Interface\ReInstall;
 use Base\Module\Service\Container;
+use Base\Module\Exception\ModuleException;
 use Base\Module\Service\Handlers\HandlersSmartProcessOrmService as ISmartProcessOrmHandlersService;
 use Base\Module\Service\Tool\ClassList;
-use Bitrix\Main\ObjectNotFoundException;
-use Bitrix\Main\SystemException;
-use Psr\Container\NotFoundExceptionInterface;
-use ReflectionException;
 
 class HandlersSmartProcessOrmInstaller implements Install, UnInstall, ReInstall
 {
     /**
      * @return array
-     * @throws NotFoundExceptionInterface
-     * @throws ObjectNotFoundException
-     * @throws ReflectionException
-     * @throws SystemException
+     * @throws ModuleException
      */
     private function getHandlers(): array
     {
@@ -30,10 +24,7 @@ class HandlersSmartProcessOrmInstaller implements Install, UnInstall, ReInstall
     }
 
     /**
-     * @throws NotFoundExceptionInterface
-     * @throws ObjectNotFoundException
-     * @throws ReflectionException
-     * @throws SystemException
+     * @throws ModuleException
      */
     public function install(): void
     {
@@ -43,10 +34,7 @@ class HandlersSmartProcessOrmInstaller implements Install, UnInstall, ReInstall
     }
 
     /**
-     * @throws NotFoundExceptionInterface
-     * @throws ObjectNotFoundException
-     * @throws ReflectionException
-     * @throws SystemException
+     * @throws ModuleException
      */
     public function unInstall(bool $saveData): void
     {
@@ -56,10 +44,7 @@ class HandlersSmartProcessOrmInstaller implements Install, UnInstall, ReInstall
     }
 
     /**
-     * @throws NotFoundExceptionInterface
-     * @throws ObjectNotFoundException
-     * @throws ReflectionException
-     * @throws SystemException
+     * @throws ModuleException
      */
     public function reInstall(): void
     {
