@@ -27,6 +27,11 @@ class HandlersSmartProcessOrmService implements ISmartProcessOrmHandlersService
         $this->moduleId = $moduleId;
     }
 
+    public function getModuleId(): string
+    {
+        return $this->moduleId;
+    }
+
     /**
      * @throws ReflectionException
      * @throws LoaderException
@@ -154,7 +159,7 @@ class HandlersSmartProcessOrmService implements ISmartProcessOrmHandlersService
             ->fetchAll();
     }
 
-    private function getStoredHandlers(): array
+    public function getStoredHandlers(): array
     {
         $serialized = Option::get($this->moduleId, self::OPTION_NAME);
         if (empty($serialized)) {
