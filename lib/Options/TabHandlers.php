@@ -5,7 +5,7 @@ namespace Base\Module\Options;
 use Base\Module\Service\Options\Tab;
 use Bitrix\Main\Localization\Loc;
 
-class TabHandler implements Tab
+class TabHandlers implements Tab
 {
     public static function getId(): string
     {

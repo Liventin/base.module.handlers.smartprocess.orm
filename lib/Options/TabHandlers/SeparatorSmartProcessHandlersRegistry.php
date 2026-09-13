@@ -1,8 +1,8 @@
 <?php
 
-namespace Base\Module\Options\TabHandler;
+namespace Base\Module\Options\TabHandlers;
 
-use Base\Module\Options\TabHandler;
+use Base\Module\Options\TabHandlers;
 use Base\Module\Service\Options\Option;
 use Bitrix\Main\Localization\Loc;
 
@@ -25,7 +25,7 @@ class SeparatorSmartProcessHandlersRegistry implements Option
 
     public static function getTabId(): string
     {
-        return TabHandler::getId();
+        return TabHandlers::getId();
     }
 
     public static function getSort(): int

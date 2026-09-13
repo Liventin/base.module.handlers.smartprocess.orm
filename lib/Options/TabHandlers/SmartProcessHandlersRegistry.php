@@ -1,9 +1,9 @@
 <?php
 
-namespace Base\Module\Options\TabHandler;
+namespace Base\Module\Options\TabHandlers;
 
 use Base\Module\Exception\ModuleException;
-use Base\Module\Options\TabHandler;
+use Base\Module\Options\TabHandlers;
 use Base\Module\Service\Container;
 use Base\Module\Service\Options\Option;
 use Base\Module\Service\Options\OptionsService;
@@ -31,7 +31,7 @@ class SmartProcessHandlersRegistry implements Option
 
     public static function getTabId(): string
     {
-        return TabHandler::getId();
+        return TabHandlers::getId();
     }
 
     public static function getSort(): int
