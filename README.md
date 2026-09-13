@@ -56,10 +56,3 @@ class HandlerSmartProcessOrmExample
 - по клику раскрывается список **всех** зарегистрированных в системе обработчиков
   этого события (включая чужие модули), отсортированных по приоритету;
 - собственные обработчики модуля визуально подсвечены.
-
-```json
-"require": {
-    "liventin/base.module.handlers.smartprocess.orm": "^1.0.0",
-    "liventin/base.module.options.provider.table": "^1.0.0"
-}
-```
