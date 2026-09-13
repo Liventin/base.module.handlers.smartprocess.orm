@@ -6,7 +6,7 @@ use Base\Module\Options\TabHandler;
 use Base\Module\Service\Options\Option;
 use Bitrix\Main\Localization\Loc;
 
-class Separator implements Option
+class SeparatorSmartProcessHandlersRegistry implements Option
 {
     public static function getId(): string
     {
