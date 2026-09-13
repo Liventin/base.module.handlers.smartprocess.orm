@@ -208,9 +208,6 @@ class SmartProcessHandlersRegistry implements Option
     private static function getHandlersService(): ?ISmartProcessOrmHandlersService
     {
         try {
-            if (!Container::has(ISmartProcessOrmHandlersService::SERVICE_CODE)) {
-                return null;
-            }
             return Container::get(ISmartProcessOrmHandlersService::SERVICE_CODE);
         } catch (ModuleException) {
             return null;
