@@ -205,7 +205,7 @@ class SmartProcessHandlersRegistry implements Option
     /**
      * @return ISmartProcessOrmHandlersService|null
      */
-    private static function getHandlersService(): ?ISmartProcessOrmHandlersService
+    private static function getHandlersService(): mixed
     {
         try {
             return Container::get(ISmartProcessOrmHandlersService::SERVICE_CODE);
